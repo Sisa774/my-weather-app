@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/d604130cc6.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <form id="search-button">
+        <input type="search" placeholder="Search city" class="search-column" />
+        <input type="submit" value="Search" />
+      </form>
+      <button id="current-location">Current Location</button>
+
+      <h1>Cape Town</h1>
+      <br />
+      <span class="date">Sunday</span>
+      <br />
+      <h3>
+        <span class="weather">23</span>
+        <a href="#" id="celcius"> °C </a> |
+        <a href="#" id="farenheit">°F </a>
+        <i class="fa-solid fa-cloud"></i>
+      </h3>
+      <br />
+      <div class="container text-center weekdays">
+        <div class="row row-cols-5">
+          <div class="col">Mon</div>
+          <div class="col">Tue</div>
+          <div class="col">Wed</div>
+          <div class="col">Thur</div>
+          <div class="col">Fri</div>
+        </div>
+      </div>
+      <br />
+      <div class="container text-center clouds">
+        <div class="row row-cols-5">
+          <div class="col">
+            <i class="fa-solid fa-sun"></i>
+          </div>
+          <div class="col">
+            <i class="fa-solid fa-cloud-sun"></i>
+          </div>
+          <div class="col">
+            <i class="fa-solid fa-sun"></i>
+          </div>
+          <div class="col">
+            <i class="fa-solid fa-cloud thur"></i>
+          </div>
+          <div class="col">
+            <i class="fa-solid fa-cloud-rain"></i>
+          </div>
+        </div>
+      </div>
+      <br />
+      <div class="container text-center degrees-celcius">
+        <div class="row row-cols-5">
+          <div class="col">22/16</div>
+          <div class="col">23/15</div>
+          <div class="col">28/14</div>
+          <div class="col">25/16</div>
+          <div class="col">22/15</div>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
